@@ -15,7 +15,7 @@ class WinesTableSeeder extends Seeder
     public function run(): void
     {
         $data_string= file_get_contents('https://api.sampleapis.com/wines/reds');
-        @dd($data_string);
+
         $data=json_decode($data_string, true);
 
         foreach($data as $wine){
