@@ -14,7 +14,7 @@ class PageController extends Controller
     }
     public function newPage(){
 
-        return view('nuova-pagina');
+        return view('wines');
 
     }
 }
