@@ -20,12 +20,12 @@ class WinesTableSeeder extends Seeder
 
         foreach($data as $wine){
            $new_wine= new Wine();
-           $new_wine->winery=$wine->winery;
-           $new_wine->wine=$wine->wine;
-           $new_wine->average=$wine->average;
-           $new_wine->reviews=$wine->reviews;
-           $new_wine->location=$wine->location;
-           $new_wine->image=$wine->image;
+           $new_wine->winery=$wine['winery'];
+           $new_wine->wine=$wine['wine'];
+           $new_wine->average=$wine['average'];
+           $new_wine->reviews=$wine['reviews'];
+           $new_wine->location=$wine['location'];
+           $new_wine->image=$wine['image'];
            $new_wine->save();
         }
     }
