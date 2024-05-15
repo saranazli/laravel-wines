@@ -6,4 +6,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class,'index'])->name('home');
 
-Route::get('/nuova-pagina', [PageController::class, 'newPage'])->name('nuova-pagina');
+Route::get('/wines', [PageController::class, 'wines'])->name('wines');
