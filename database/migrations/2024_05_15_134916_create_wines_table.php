@@ -13,11 +13,9 @@ return new class extends Migration
     {
         Schema::create('wines', function (Blueprint $table) {
             $table->id();
-            $table->string('winery',50);
-            $table->string('wine',50);
-            $table->tinyInteger('average');
-            $table->string('reviews', 50);
-            $table->string('location', 50);
+            $table->string('winery');
+            $table->string('wine');
+            $table->string('location');
             $table->string('image');
             $table->timestamps();
         });
