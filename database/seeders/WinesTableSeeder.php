@@ -22,6 +22,11 @@ class WinesTableSeeder extends Seeder
            $new_wine= new Wine();
            $new_wine->winery=$wine['winery'];
            $new_wine->wine=$wine['wine'];
+<<<<<<< HEAD
+=======
+           $new_wine->average=$wine['average'];
+           $new_wine->reviews=$wine['reviews'];
+>>>>>>> 03a2eef404d64f1080c1686146cc43e283a03bb7
            $new_wine->location=$wine['location'];
            $new_wine->image=$wine['image'];
            $new_wine->save();
