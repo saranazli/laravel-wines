@@ -12,7 +12,7 @@ class PageController extends Controller
         return view('home');
 
     }
-    public function newPage(){
+    public function wines(){
 
         return view('wines');
 
