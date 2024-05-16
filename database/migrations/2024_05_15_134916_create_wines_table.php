@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('winery');
             $table->string('wine');
+            $table->decimal('vote',2, 1);
             $table->string('location');
             $table->string('image');
             $table->timestamps();
